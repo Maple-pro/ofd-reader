@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+tsconfig.tsbuildinfo
+
+# local npm cache (kept inside the workspace because ~/.npm may be read-only)
+.npm-cache/
+
+# scratch space for manual verification runs
+.verify/
+.probe/
+
+# editor / OS noise
+.DS_Store
+*.log
+
+*.ofd

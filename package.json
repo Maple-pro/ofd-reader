@@ -1,0 +1,29 @@
+{
+  "name": "ofd-reader",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Browser OFD (GB/T 33190-2016) reader optimized for scanned documents",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --force",
+    "sample": "node scripts/make-sample.mjs",
+    "check": "node scripts/check-units.mjs",
+    "inspect": "node scripts/inspect-render.mjs",
+    "probe": "node scripts/probe.mjs"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^5.9.0",
+    "vite": "^8.3.4"
+  }
+}
