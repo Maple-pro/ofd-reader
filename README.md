@@ -34,15 +34,14 @@ npm run build        # 产物在 dist/，用任意静态服务器托管即可
 npm run preview
 ```
 
-`public/samples/` 里放了两份可直接打开的示例：
+`public/samples/` 里放了一份可直接打开的示例：
 
-- `sample-scan.ofd`：7 页扫描件（本项目的参考文件）
 - `sample-vector.ofd`：合成文件，覆盖文字、矢量路径、曲线、内嵌图片、模板页
 
 也可以直接用 `?src=` 指定文件地址自动打开（便于分享和自动化测试）：
 
 ```
-http://127.0.0.1:5199/?src=/samples/sample-scan.ofd
+http://127.0.0.1:5199/?src=/samples/sample-vector.ofd
 ```
 
 > `file://` 下浏览器禁止读取本地文件，用 `?src=` 请通过本地服务器访问。
@@ -105,7 +104,7 @@ React  ── viewerStore ── Toolbar / OutlineRail / Viewport / PageCanvas
 `npm run inspect` 是最快的排查手段，例如：
 
 ```bash
-npm run inspect -- public/samples/sample-scan.ofd 0 96
+npm run inspect -- public/samples/sample-vector.ofd 0 96
 ```
 
 会输出页面尺寸、图片/文字/路径对象明细，以及两轮绘制的调用列表（第一轮请求解码，
